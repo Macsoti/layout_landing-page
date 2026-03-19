@@ -38,10 +38,15 @@
 }
 
 .label {
+  display: block;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: rgba(147, 147, 163, 1);
+  margin: 24px 0 8px;
+}
+
+.contact-item:first-child .label {
   margin: 0;
 }
 
@@ -51,6 +56,14 @@
   font-size: 16px;
   color: rgba(25, 25, 25, 1);
   margin: 8px 0;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: rgba(126, 126, 131, 1);
+    transform: translateX(3px);
+  }
 }
 
 .form-contact__input {
