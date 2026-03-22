@@ -148,7 +148,7 @@
     border 0.5s ease;
 
   &:hover {
-    border: 2px solid rgba(240, 241, 244, 1);
+    border: 0;
     color: rgba(41, 41, 41, 1);
     background-color: rgba(248, 248, 250, 1);
   }
@@ -161,4 +161,15 @@
   @include on-desktop {
     width: 411px;
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px  rgba(248, 248, 250, 1) inset !important;
+  -webkit-text-fill-color:  rgba(41, 41, 41, 1) !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
