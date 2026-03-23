@@ -260,8 +260,9 @@
           <div class="container contacts__container">
             <h2 class="section-title">Contact us</h2>
             <form
-              class="form-contact"
-              >
+            class="form-contact"
+            onsubmit="this.reset(); return false;"
+            >
               <div class="form-field">
                 <input
                   class="form-contact__input"
@@ -285,7 +286,7 @@
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button type="reset" class="contact-us__button">Send</button>
+              <button class="contact-us__button">Send</button>
             </form>
             <div class="contacts__contact">
               <div class="contact-item">
